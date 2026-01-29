@@ -1,14 +1,18 @@
+// src/App.jsx
 
-import './App.css'
-import Orchids from './components/Orchids'
+import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
+import Orchids from "./components/Orchids";
+import { ThemeProvider } from "./components/ThemeContext";
+import "./App.css";
 
 function App() {
-
   return (
-    <>
+    <ThemeProvider>
+      <Navigation />
       <Orchids />
-    </>
-  )
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
