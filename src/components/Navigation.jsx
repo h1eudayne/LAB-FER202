@@ -54,6 +54,11 @@ const Navigation = ({ cartItemCount }) => {
           <Link to="/contact" style={linkStyle}>
             Contact
           </Link>
+          {user && (
+            <Link to="/manage" style={linkStyle}>
+              Dashboard
+            </Link>
+          )}
         </div>
       </div>
 

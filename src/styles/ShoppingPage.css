@@ -1,3 +1,5 @@
+/* ShoppingPage styles */
+
 .cart-summary {
   background-color: #f8f9fa;
   padding: 10px 15px;
@@ -12,4 +14,65 @@
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode */
+.dark-theme .cart-summary {
+  background-color: #2a2a2a;
+  color: #eee;
+}
+
+.dark-theme .order-confirmation {
+  background: #2a2a2a;
+  color: #eee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark mode - Bootstrap overrides for Cart/Checkout */
+.dark-theme .form-control {
+  background-color: #333;
+  color: #eee;
+  border-color: #555;
+}
+
+.dark-theme .form-control:focus {
+  background-color: #3a3a3a;
+  color: #eee;
+  border-color: #007bff;
+}
+
+.dark-theme .form-label {
+  color: #ddd;
+}
+
+.dark-theme .form-check-label {
+  color: #ddd;
+}
+
+.dark-theme .text-muted {
+  color: #aaa !important;
+}
+
+.dark-theme .table {
+  color: #ddd;
+  border-color: #444;
+}
+
+.dark-theme .table-bordered th,
+.dark-theme .table-bordered td {
+  border-color: #444;
+}
+
+.dark-theme .table thead th {
+  background-color: #333;
+  color: #eee;
+}
+
+.dark-theme .table tbody td {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+.dark-theme .table tbody tr:hover td {
+  background-color: #2a2a2a;
 }

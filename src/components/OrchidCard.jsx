@@ -13,7 +13,7 @@ const OrchidCard = ({
     <div className="orchid-card">
       <img src={orchid.image} alt={orchid.name} />
       <h1>{orchid.name}</h1>
-      <p className="orchid-price">${orchid.price.toFixed(2)}</p>
+      <p className="orchid-price">${orchid.price}</p>
       <div className="orchid-actions">
         <button className="btn-view" onClick={() => handleOnClick(orchid)}>
           View Details

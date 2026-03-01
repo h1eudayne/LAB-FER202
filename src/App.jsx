@@ -7,6 +7,7 @@ import Orchids from "./components/Orchids";
 import ShoppingPage from "./components/ShoppingPage";
 import Contact from "./components/Contact";
 import OrderConfirmation from "./components/OrderConfirmation";
+import ManageOrchids from "./components/ManageOrchids";
 import { ThemeProvider } from "./components/ThemeContext";
 import { cartReducer, initialState } from "./reducers/cartReducer";
 import "./App.css";
@@ -63,6 +64,7 @@ function App() {
             }
           />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/manage" element={<ManageOrchids />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

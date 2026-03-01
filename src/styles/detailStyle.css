@@ -1,0 +1,94 @@
+.detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.detail-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.detail-back:hover {
+  text-decoration: underline;
+}
+
+.detail-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.detail-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.detail-info {
+  padding: 24px;
+}
+
+.detail-info h2 {
+  margin: 0 0 12px;
+  font-size: 1.8rem;
+}
+
+.detail-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.detail-price {
+  font-size: 1.4rem !important;
+  font-weight: bold;
+  color: #e74c3c !important;
+  margin-top: 16px !important;
+}
+
+.detail-special {
+  display: inline-block;
+  background: #fff3cd;
+  color: #856404;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.detail-loading,
+.detail-error {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* Dark mode */
+.dark-theme .detail-card {
+  background: #2a2a2a;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .detail-info h2 {
+  color: #eee;
+}
+
+.dark-theme .detail-info p {
+  color: #ccc;
+}
+
+.dark-theme .detail-special {
+  background: #3d3520;
+  color: #f0c040;
+}
+
+.dark-theme .detail-back {
+  color: #4da3ff;
+}

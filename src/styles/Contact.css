@@ -1,9 +1,11 @@
+/* Contact Wrapper */
 .contact-wrapper {
   max-width: 620px;
   margin: 40px auto;
   padding: 0 16px;
 }
 
+/* Contact Card */
 .contact-card {
   border: none;
   border-radius: 16px;
@@ -17,6 +19,7 @@
   color: #1a1a2e;
 }
 
+/* Custom Input Focus */
 .custom-input {
   border-radius: 8px;
   background: #fafafa;
@@ -32,6 +35,7 @@
   background: #fff;
 }
 
+/* Custom Switch */
 .custom-switch .form-check-input {
   width: 44px;
   height: 24px;
@@ -49,6 +53,7 @@
   padding-top: 2px;
 }
 
+/* Gradient Send Button */
 .btn-send {
   padding: 12px 32px;
   font-size: 16px;
@@ -71,6 +76,7 @@
   transform: translateY(0);
 }
 
+/* Dark theme support */
 .dark-theme .contact-card {
   background: #1e1e2e;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
@@ -96,5 +102,9 @@
 }
 
 .dark-theme .custom-switch .form-check-label {
+  color: #ccc;
+}
+
+.dark-theme .custom-input::placeholder {
   color: #ccc;
 }

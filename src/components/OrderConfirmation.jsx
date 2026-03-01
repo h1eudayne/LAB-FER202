@@ -1,5 +1,3 @@
-// OrderConfirmation component - displays order summary after successful submission
-
 function OrderConfirmation({ orderData }) {
   const { customer, items, totalQuantity, totalPrice } = orderData;
 

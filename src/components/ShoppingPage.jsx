@@ -1,5 +1,3 @@
-// ShoppingPage - Cart + Checkout Form page
-
 import Cart from "./Cart";
 import CheckoutForm from "./CheckoutForm";
 import "../styles/ShoppingPage.css";
