@@ -1,0 +1,100 @@
+.contact-wrapper {
+  max-width: 620px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.contact-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.contact-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1a1a2e;
+}
+
+.custom-input {
+  border-radius: 8px;
+  background: #fafafa;
+  border: 1.5px solid #d0d5dd;
+  padding: 12px 14px;
+  font-size: 15px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-input:focus {
+  border-color: #4361ee;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+  background: #fff;
+}
+
+.custom-switch .form-check-input {
+  width: 44px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.custom-switch .form-check-input:checked {
+  background-color: #4361ee;
+  border-color: #4361ee;
+}
+
+.custom-switch .form-check-label {
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 2px;
+}
+
+.btn-send {
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #4361ee, #3a0ca3);
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-send:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(67, 97, 238, 0.4);
+  background: linear-gradient(135deg, #4361ee, #3a0ca3);
+  color: #fff;
+}
+
+.btn-send:active {
+  transform: translateY(0);
+}
+
+.dark-theme .contact-card {
+  background: #1e1e2e;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .contact-title {
+  color: #e0e0e0;
+}
+
+.dark-theme .custom-input {
+  background: #2a2a3e;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+.dark-theme .custom-input:focus {
+  border-color: #4361ee;
+  background: #2e2e42;
+}
+
+.dark-theme .form-label {
+  color: #ccc;
+}
+
+.dark-theme .custom-switch .form-check-label {
+  color: #ccc;
+}

@@ -1,7 +1,32 @@
+import { Link } from "react-router-dom";
 import { useAuth } from "./ThemeContext";
 
 const Navigation = () => {
   const { dark, toggleTheme, user, login, logout } = useAuth();
+
+  const navStyle = {
+    position: "sticky",
+    top: 0,
+    zIndex: 100,
+    backgroundColor: dark ? "#1e1e1e" : "#fff",
+    color: dark ? "#fff" : "#333",
+    padding: "12px 32px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    boxShadow: dark
+      ? "0 2px 10px rgba(0,0,0,0.3)"
+      : "0 2px 10px rgba(0,0,0,0.08)",
+  };
+
+  const linkStyle = {
+    textDecoration: "none",
+    color: dark ? "#ccc" : "#555",
+    fontWeight: "500",
+    padding: "6px 14px",
+    borderRadius: "6px",
+    transition: "all 0.2s ease",
+  };
 
   const getButtonStyle = (isPrimary) => ({
     padding: "8px 16px",
@@ -16,23 +41,18 @@ const Navigation = () => {
   });
 
   return (
-    <nav
-      style={{
-        position: "sticky",
-        top: 0,
-        zIndex: 100,
-        backgroundColor: dark ? "#1e1e1e" : "#fff",
-        color: dark ? "#fff" : "#333",
-        padding: "16px 32px",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        boxShadow: dark
-          ? "0 2px 10px rgba(0,0,0,0.3)"
-          : "0 2px 10px rgba(0,0,0,0.08)",
-      }}
-    >
-      <strong>{user ? `Welcome, ${user.name}` : "Please login"}</strong>
+    <nav style={navStyle}>
+      <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
+        <strong>{user ? `Welcome, ${user.name}` : "Please login"}</strong>
+        <div style={{ display: "flex", gap: "8px" }}>
+          <Link to="/" style={linkStyle}>
+            Home
+          </Link>
+          <Link to="/contact" style={linkStyle}>
+            Contact
+          </Link>
+        </div>
+      </div>
 
       <div style={{ display: "flex", gap: "12px" }}>
         {user ? (
