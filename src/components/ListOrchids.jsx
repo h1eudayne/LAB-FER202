@@ -3,7 +3,7 @@ import { ListOfOrchids } from "../ListOfOrchids";
 import OrchidModal from "./OrchidModal";
 import OrchidCard from "./OrchidCard";
 
-const ListOrchids = () => {
+const ListOrchids = ({ dispatch }) => {
   const [selectedOrchid, setSelectedOrchid] = useState(null);
   const [showDetails, setShowDetails] = useState(false);
 
@@ -15,6 +15,7 @@ const ListOrchids = () => {
           orchid={orchid}
           setSelectedOrchid={setSelectedOrchid}
           setShowDetails={setShowDetails}
+          dispatch={dispatch}
         />
       ))}
       <OrchidModal

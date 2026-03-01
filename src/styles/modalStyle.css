@@ -1,25 +1,46 @@
-.modal-overlay {
+.orchid-modal-overlay {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 1050;
 }
 
-.modal {
+.orchid-modal {
     background: #fff;
-    padding: 24px;
-    width: 400px;
+    padding: 32px;
+    width: 420px;
+    max-width: 90vw;
     border-radius: 16px;
     position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
-.close-btn {
+.orchid-modal h2 {
+    margin: 0 0 16px;
+    font-size: 22px;
+    color: #333;
+}
+
+.orchid-modal p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+.orchid-modal-close {
     position: absolute;
-    top: 8px;
-    right: 14px;
-    font-size: 24px;
+    top: 12px;
+    right: 16px;
+    font-size: 26px;
     cursor: pointer;
+    color: #888;
+    transition: color 0.2s;
+    line-height: 1;
+}
+
+.orchid-modal-close:hover {
+    color: #333;
 }

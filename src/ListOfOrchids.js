@@ -8,6 +8,7 @@ export const ListOfOrchids = [
     color: "pink",
     origin: "Taiwan",
     category: "Cattleya",
+    price: 25.99,
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const ListOfOrchids = [
     color: "blue",
     origin: "Thailand",
     category: "Phalaenopsis",
+    price: 18.5,
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const ListOfOrchids = [
     color: "yellow",
     origin: "Vietnam",
     category: "Dendrobium",
+    price: 30.0,
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ export const ListOfOrchids = [
     color: "white",
     origin: "Japan",
     category: "Phalaenopsis",
+    price: 22.0,
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ export const ListOfOrchids = [
     color: "purple",
     origin: "Thailand",
     category: "Vanda",
+    price: 35.0,
   },
   {
     id: 6,
@@ -58,6 +63,7 @@ export const ListOfOrchids = [
     color: "red",
     origin: "China",
     category: "Cymbidium",
+    price: 20.0,
   },
   {
     id: 7,
@@ -68,6 +74,7 @@ export const ListOfOrchids = [
     color: "white",
     origin: "Korea",
     category: "Phalaenopsis",
+    price: 15.99,
   },
   {
     id: 8,
@@ -78,6 +85,7 @@ export const ListOfOrchids = [
     color: "pink",
     origin: "Vietnam",
     category: "Cattleya",
+    price: 28.5,
   },
   {
     id: 9,
@@ -88,6 +96,7 @@ export const ListOfOrchids = [
     color: "green",
     origin: "Malaysia",
     category: "Paphiopedilum",
+    price: 19.99,
   },
   {
     id: 10,
@@ -98,6 +107,7 @@ export const ListOfOrchids = [
     color: "orange",
     origin: "Indonesia",
     category: "Oncidium",
+    price: 32.0,
   },
   {
     id: 11,
@@ -108,6 +118,7 @@ export const ListOfOrchids = [
     color: "dark purple",
     origin: "Thailand",
     category: "Vanda",
+    price: 24.5,
   },
   {
     id: 12,
@@ -118,6 +129,7 @@ export const ListOfOrchids = [
     color: "light pink",
     origin: "Vietnam",
     category: "Dendrobium",
+    price: 14.99,
   },
   {
     id: 13,
@@ -128,6 +140,7 @@ export const ListOfOrchids = [
     color: "yellow",
     origin: "Taiwan",
     category: "Phalaenopsis",
+    price: 29.99,
   },
   {
     id: 14,
@@ -138,6 +151,7 @@ export const ListOfOrchids = [
     color: "blue",
     origin: "Singapore",
     category: "Phalaenopsis",
+    price: 21.0,
   },
   {
     id: 15,
@@ -148,6 +162,7 @@ export const ListOfOrchids = [
     color: "violet",
     origin: "Thailand",
     category: "Cattleya",
+    price: 38.0,
   },
   {
     id: 16,
@@ -158,5 +173,6 @@ export const ListOfOrchids = [
     color: "soft pink",
     origin: "Vietnam",
     category: "Dendrobium",
+    price: 16.5,
   },
 ];

@@ -10,28 +10,38 @@ const OrchidModal = ({
     setShowDetails(false);
     setSelectedOrchid(null);
   };
-  return (
-    <>
-      {showDetails && selectedOrchid && (
-        <div className="modal-overlay">
-          <div className="modal">
-            <span className="close-btn" onClick={handleCloseModal}>
-              &times;
-            </span>
 
-            <p>Origin: {selectedOrchid.origin}</p>
-            <p>Category: {selectedOrchid.category}</p>
-            <p>Color: {selectedOrchid.color}</p>
-            <p>Rating: {selectedOrchid.rating} / 5</p>
-            {selectedOrchid.isSpecial && (
-              <p>
-                <strong>Special Orchid!</strong>
-              </p>
-            )}
-          </div>
-        </div>
-      )}
-    </>
+  if (!showDetails || !selectedOrchid) return null;
+
+  return (
+    <div className="orchid-modal-overlay" onClick={handleCloseModal}>
+      <div className="orchid-modal" onClick={(e) => e.stopPropagation()}>
+        <span className="orchid-modal-close" onClick={handleCloseModal}>
+          &times;
+        </span>
+        <h2>{selectedOrchid.name}</h2>
+        <p>
+          <strong>Origin:</strong> {selectedOrchid.origin}
+        </p>
+        <p>
+          <strong>Category:</strong> {selectedOrchid.category}
+        </p>
+        <p>
+          <strong>Color:</strong> {selectedOrchid.color}
+        </p>
+        <p>
+          <strong>Price:</strong> ${selectedOrchid.price.toFixed(2)}
+        </p>
+        <p>
+          <strong>Rating:</strong> {selectedOrchid.rating} / 5
+        </p>
+        {selectedOrchid.isSpecial && (
+          <p style={{ color: "#e67e22", fontWeight: "bold" }}>
+            Special Orchid!
+          </p>
+        )}
+      </div>
+    </div>
   );
 };
 

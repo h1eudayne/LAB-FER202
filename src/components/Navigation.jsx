@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "./ThemeContext";
 
-const Navigation = () => {
+const Navigation = ({ cartItemCount }) => {
   const { dark, toggleTheme, user, login, logout } = useAuth();
 
   const navStyle = {
@@ -47,6 +47,9 @@ const Navigation = () => {
         <div style={{ display: "flex", gap: "8px" }}>
           <Link to="/" style={linkStyle}>
             Home
+          </Link>
+          <Link to="/cart" style={linkStyle}>
+            Cart {cartItemCount > 0 && `(${cartItemCount})`}
           </Link>
           <Link to="/contact" style={linkStyle}>
             Contact
